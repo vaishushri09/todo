@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from todo_app.views import add_task,todo_list,test_view
+from todo_app.views import add_task,todo_list,test_view,add_custom_task
 from todo_app import views
 
 
@@ -32,4 +32,6 @@ urlpatterns = [
     path('login/', views.login_view, name='login'),
     path('all/', views.all_user_tasks, name='all_user_tasks'),
     path('register/', views.register, name='register'),
+    path('add_custom_task/', views.add_custom_task, name='add_custom_task'),
+
 ]
