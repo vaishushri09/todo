@@ -14,4 +14,12 @@ class UserRegistrationForm(UserCreationForm):
 class TaskForm(forms.ModelForm):
     class Meta:
         model = Task
-        fields = ['title', 'description']
+        fields = ['title', 'description', 'completed']
+
+from django import forms
+from .models import CustomTask
+
+class CustomTaskForm(forms.ModelForm):
+    class Meta:
+        model = CustomTask
+        fields = ['title', 'description', 'completed']
