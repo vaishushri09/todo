@@ -1,0 +1,34 @@
+/* todo_app/static/css/styles.css */
+
+/* Style the todo list items */
+
+
+
+ul.todo-list li {
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  /* Add some spacing between the title and description */
+  ul.todo-list li h3 {
+    margin-bottom: 5px;
+  }
+  
+  /* Style the add task form */
+  form.add-task-form {
+    margin-top: 20px;
+  }
+  
+  /* Style the buttons */
+  button {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
